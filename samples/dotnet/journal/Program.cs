@@ -9,8 +9,8 @@ using System.Text.Json;
 string PartnerId = "";
 string BearerToken = "";
 string dataFileName = "data.json";
-string AuthDomain = "auth-stage.dk1.kiva.org"; 
-string PartnerDomain = "partner-api-stage.dk1.kiva.org";
+string AuthDomain = "auth-stage.kiva.org"; 
+string PartnerDomain = "partner-api-stage.kiva.org";
 
 
 // ---------------------------------------------------------------------------
