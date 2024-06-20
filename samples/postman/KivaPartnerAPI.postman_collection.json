@@ -29,11 +29,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/config/activities",
+							"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/config/activities",
 							"protocol": "https",
 							"host": [
 								"partner-api-stage",
-								"dk1",
 								"kiva",
 								"org"
 							],
@@ -68,11 +67,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/config/locales",
+							"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/config/locales",
 							"protocol": "https",
 							"host": [
 								"partner-api-stage",
-								"dk1",
 								"kiva",
 								"org"
 							],
@@ -107,11 +105,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/config/themes",
+							"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/config/themes",
 							"protocol": "https",
 							"host": [
 								"partner-api-stage",
-								"dk1",
 								"kiva",
 								"org"
 							],
@@ -146,11 +143,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/config/locations",
+							"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/config/locations",
 							"protocol": "https",
 							"host": [
 								"partner-api-stage",
-								"dk1",
 								"kiva",
 								"org"
 							],
@@ -194,11 +190,10 @@
 							"raw": "{\n  \"client_waiver_signed\": true,\n  \"description\": \"\",\n  \"loanuse\": \"\",\n  \"entreps\": [\n    {\n      \"amount\": 0,\n      \"loan_id\": \"\",\n      \"client_id\": \"\",\n      \"first_name\": \"\",\n      \"last_name\": \"\",\n      \"gender\": \"\"\n    }\n  ],\n  \"schedule\": [\n    {\n      \"date\": \"YYYY-MM-DD\",\n      \"interest\": 0,\n      \"principal\": 0\n    }\n  ],\n  \"disburse_time\": \"YYYY-MM-DD\"\n}"
 						},
 						"url": {
-							"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/loan_draft",
+							"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/loan_draft",
 							"protocol": "https",
 							"host": [
 								"partner-api-stage",
-								"dk1",
 								"kiva",
 								"org"
 							],
@@ -278,7 +273,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://auth-stage.dk1.kiva.org/oauth/token",
+					"raw": "https://auth-stage.kiva.org/oauth/token",
 					"protocol": "https",
 					"host": [
 						"auth-stage",
@@ -319,7 +314,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "https://partner-api-stage.dk1.kiva.org/v3/partner/{{PARTNER_ID}}/loans",
+					"raw": "https://partner-api-stage.kiva.org/v3/partner/{{PARTNER_ID}}/loans",
 					"protocol": "https",
 					"host": [
 						"partner-api-stage",
@@ -377,7 +372,7 @@
 		},
 		{
 			"key": "AUDIENCE",
-			"value": "https://partner-api-stage.dk1.kiva.org"
+			"value": "https://partner-api-stage.kiva.org"
 		},
 		{
 			"key": "SCOPES",

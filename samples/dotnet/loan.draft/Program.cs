@@ -13,8 +13,8 @@ using System.Threading.Tasks;
 string PartnerId = "";
 string BearerToken = "";
 string dataFileName = "data.json";
-string AuthDomain = "auth-stage.dk1.kiva.org"; 
-string PartnerDomain = "partner-api-stage.dk1.kiva.org";
+string AuthDomain = "auth-stage.kiva.org"; 
+string PartnerDomain = "partner-api-stage.kiva.org";
 ActivityList activities = null;                                 // loaded by GetActivities()
 LocaleList locales = null;                                      // loaded by GetLocales()
 ThemeList themes = null;                                        // loaded by GetThemes()
