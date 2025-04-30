@@ -39,7 +39,7 @@ Scope identifies which APIs can be accessed.  Use the following table to determi
 | create:journal_update                                                 | https://partner-api.k1.kiva.org/v3/partner/{id}/journals                 |    
 | create:repayment                                                  | https://partner-api.k1.kiva.org/v3/partner/{id}/repayments |
 
-Please refer to the [Swagger API documentation](https://partner-api-stage.kiva.org/swagger-ui/) for specifics on each API. 
+Please refer to the [Swagger API documentation](https://partnerapi.production.kiva.org/swagger-ui/) for specifics on each API. 
 
 ### Response Data (test environment)
 On successful authentication, you should receive a response like the following:

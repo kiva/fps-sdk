@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. It contains
 information to help our partners integrate
-with [Kiva's Partner API](https://partner-api.kiva.org/swagger-ui/#/partners).
+with [Kiva's Partner API](https://partnerapi.production.kiva.org/swagger-ui/index.html#/partners).
 
 ## General Usage
 
