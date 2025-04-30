@@ -10,7 +10,7 @@ using System.Text;
 // Data
 // ---------------------------------------------------------------------------
 
-string domain = "auth-stage.dk1.kiva.org";
+string domain = "auth-stage.kiva.org";
 string clientId = System.Environment.GetEnvironmentVariable("client_id");
 string clientSecret = System.Environment.GetEnvironmentVariable("client_secret");
 string audience = System.Environment.GetEnvironmentVariable("audience");

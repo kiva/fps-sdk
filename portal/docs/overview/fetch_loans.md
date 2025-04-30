@@ -5,7 +5,7 @@ sidebar_position: 5
 # Using the API loans fetch endpoint
 
 ## Process
-The loan data stored in PA2 can be fetched via the API. See our Swagger documentation for more details: [GET /v3/partner/{id}/loans](https://partner-api-stage.dk1.kiva.org/swagger-ui/#/partners/loansRouteUsingGET)
+The loan data stored in PA2 can be fetched via the API. See our Swagger documentation for more details: [GET /v3/partner/{id}/loans](https://partner-api-stage.kiva.org/swagger-ui/#/partners/loansRouteUsingGET)
 
 There are 4 search request parameters you can send: `query`, `status`, `offset`, and `limit`.
 
@@ -32,5 +32,5 @@ After making the request, the response from the API will be returned in JSON for
 
 ## Technical documentation
 All of Kiva's technical documentation, including endpoints, can be found here:
-Test environment (Stage): https://partner-api-stage.dk1.kiva.org/swagger-ui/
-Production (to use after testing): https://partner-api.k1.kiva.org/swagger-ui/
+Test environment (Stage): https://partner-api-stage.kiva.org/swagger-ui/
+Production (to use after testing): https://partner-api.kiva.org/swagger-ui/

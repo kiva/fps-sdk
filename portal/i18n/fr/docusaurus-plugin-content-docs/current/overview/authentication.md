@@ -11,12 +11,12 @@ Il est possible d'accéder à la nouvelle API des partenaires via un Oauth2 JWT 
 ### Demande d'échantillon (environnement de test)
 
 ```json
-1 curl --location --request POST 'https://auth-stage.dk1.kiva.org/oauth/token' \
+1 curl --location --request POST 'https://auth-stage.kiva.org/oauth/token' \
 2 --header 'Accept: application/json' \
 3 --header 'Content-Type: application/x-www-form-urlencoded' \
 4 --data-urlencode 'grant_type=client_credentials' \
 5 --data-urlencode 'scope=create:loan_draft read:loans' \
-6 --data-urlencode 'audience=https://partner-api-stage.dk1.kiva.org' \
+6 --data-urlencode 'audience=https://partner-api-stage.kiva.org' \
 7 --data-urlencode 'client_id=<client ID>' \
 8 --data-urlencode 'client_secret=<client secret from Partner Admin>'
 ```
@@ -32,14 +32,14 @@ Il est possible d'accéder à la nouvelle API des partenaires via un Oauth2 JWT 
 
 Le " Scope " (champ d'application) identifie les APIs auxquelles il est possible d'accéder. Utilisez le tableau suivant pour déterminer les champs d'application (Scopes) à inclure:
 
-| Scope (Campo de aplicación)                                                      | API                                                                      |  
-|------------------------------------------------------------|--------------------------------------------------------------------------|
-| read:loans | https://partner-api.k1.kiva.org/v3/partner/{id}/loans?limit=20&offset=0  |    
-| create:loan_draft | https://partner-api.k1.kiva.org/v3/partner/{id}/loan_draft               |    
-| create:journal_update                                                 | https://partner-api.k1.kiva.org/v3/partner/{id}/journals                 |    
-| create:repayment                                                  | https://partner-api.k1.kiva.org/v3/partner/{id}/repayments |
+| Scope (Campo de aplicación)                                                      | API                                                          |  
+|------------------------------------------------------------|--------------------------------------------------------------|
+| read:loans | https://partner-api.kiva.org/v3/partner/{id}/loans?limit=20&offset=0 |    
+| create:loan_draft | https://partner-api.kiva.org/v3/partner/{id}/loan_draft      |    
+| create:journal_update                                                 | https://partner-api.kiva.org/v3/partner/{id}/journals        |    
+| create:repayment                                                  | https://partner-api.kiva.org/v3/partner/{id}/repayments |
 
-Consultez [la documentation de l'API dans Swagger](https://partner-api-stage.dk1.kiva.org/swagger-ui/) pour obtenir des informations spécifiques sur chaque API.
+Consultez [la documentation de l'API dans Swagger](https://partner-api-stage.kiva.org/swagger-ui/) pour obtenir des informations spécifiques sur chaque API.
 
 ### Response Data (environnement de test)
 Si l'authentification est correcte, vous devriez recevoir une réponse comme la suivante :
@@ -51,7 +51,7 @@ Si l'authentification est correcte, vous devriez recevoir une réponse comme la 
 3    "token_type": "bearer",
 4    "expires_in": 43199,
 5    "scope": "create:loan_draft read:loans",
-6    "iss": "https://auth.stage.dk1.kiva.org/",
+6    "iss": "https://auth.stage.kiva.org/",
 7    "partnerId": "1",
 8    "jti": "RUsivUXGghhx-Yv9zza3ggZi6ao"
 9 }
@@ -72,6 +72,6 @@ Une fois que vous avez reçu un token d'accès, entrez-le comme token porteur da
 2. Insérez le token unique au porteur que vous avez reçu.
 
 ```
-curl --location --request GET 'https://partner-api-stage.dk1.kiva.org/v3/partner/PARTNERID/loans' \
+curl --location --request GET 'https://partner-api-stage.kiva.org/v3/partner/PARTNERID/loans' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjFublhjRFRHIn0.eyJhdWQiOlsiaHR0cHM6Ly9wYXJ0bmVyLWFwaS5rMS5raXZhLm9yZyJdLCJzY29wZSI6WyJjcmVhdGU6bG9hbl9kcmFmdCIsInJlYWQ6bG9hbnMiXSwiaXNzIjoiaHR0cHM6Ly9hdXRoLmsxLmtpdmEub3JnLyIsInBhcnRuZXJJZCI6IjEiLCJleHAiOjE2MDIyMjA0MTYsImp0aSI6IlpldUt0WTZXQU5VU2lWai1EZTVtZE5nRnFGSSIsImNsaWVudF9pZCI6IlFEMmxPRzZMbTN2RWQ5QTZEdVh3eFJWOE1OMEp6cDVreSJ9.mdOHScBFzkKribTjFCfUG_BrzrDELFgznvp7OPwDvE_-dOZ-qbSR0IoItgw9Nzsgv13pY0MOM8euEzHThvaxi8gtr1WV0MY4TCE3ffgApaUo_-uC5cXu1NoMPjToE53kHthRmv4cWOu_ycFYMvPV606U24Jsgs1txNrobu_ZlUsaFpyPN-9Pr1wq8N0VQWOS9qt_lkKB0aJhbMHsNOHysTXTclkGh2jbXKj10H5LnXBQsh-UpLSKCw3UoMlepR4tjRxyXnSYLgZ80jTPSsOU1oKkAYdLRSbUHEM4g30FfZ8__kUI7LNtlmuVWYNV3ZVn0yxLO1wSu4n31TsIZUX_Ag
 ```

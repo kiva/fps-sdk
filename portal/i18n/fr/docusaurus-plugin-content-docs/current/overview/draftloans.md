@@ -67,5 +67,5 @@ Lorsqu'ils sont renseignés dans Leprojets de crédit, ces champs s'affichent su
 
 ## Documentation technique
 Toda la documentación técnica de Kiva, incluidos los puntos finales, puede encontrarse aquí:
-* Environnement de test (Stage) https://partner-api-stage.dk1.kiva.org/swagger-ui/
-* Production (à utiliser après les tests)  https://partner-api.k1.kiva.org/swagger-ui/
+* Environnement de test (Stage) https://partner-api-stage.kiva.org/swagger-ui/
+* Production (à utiliser après les tests)  https://partner-api.kiva.org/swagger-ui/

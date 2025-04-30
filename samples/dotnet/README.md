@@ -33,7 +33,7 @@ Results returned:
   "token_type":"bearer",
    "expires_in":43199,
   "scope":"create:loan_draft read:loans",
-  "iss":"https://auth-stage.dk1.kiva.org/",
+  "iss":"https://auth-stage.kiva.org/",
   "partnerId":"9999",
   "jti":"F70LMnJpXOmd4YCuPl4kZMjpG99"}
 ```

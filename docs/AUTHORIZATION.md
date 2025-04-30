@@ -13,7 +13,7 @@ A token will be returned in `access_token` field in the return body, formatted l
     "token_type": "bearer",
     "expires_in": 43199,
     "scope": "read:loans",
-    "iss": "https://auth-stage.dk1.kiva.org/",
+    "iss": "https://auth-stage.kiva.org/",
     "partnerId": "7326",
     "jti": "Qs4qoOJyC6vwkL1FoXORxfqwNis"
 }

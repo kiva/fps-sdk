@@ -10,12 +10,12 @@ The new Partner API is accessible using an Oauth2 JWT obtained from Kiva’s aut
 ### Sample Request (test environment)
 
 ```json
-1 curl --location --request POST 'https://auth-stage.dk1.kiva.org/oauth/token' \
+1 curl --location --request POST 'https://auth-stage.kiva.org/oauth/token' \
 2 --header 'Accept: application/json' \
 3 --header 'Content-Type: application/x-www-form-urlencoded' \
 4 --data-urlencode 'grant_type=client_credentials' \
 5 --data-urlencode 'scope=create:loan_draft read:loans' \
-6 --data-urlencode 'audience=https://partner-api-stage.dk1.kiva.org' \
+6 --data-urlencode 'audience=https://partner-api-stage.kiva.org' \
 7 --data-urlencode 'client_id=<client ID>' \
 8 --data-urlencode 'client_secret=<client secret from Partner Admin>'
 ```
@@ -39,7 +39,7 @@ Scope identifies which APIs can be accessed.  Use the following table to determi
 | create:journal_update                                                 | https://partner-api.k1.kiva.org/v3/partner/{id}/journals                 |    
 | create:repayment                                                  | https://partner-api.k1.kiva.org/v3/partner/{id}/repayments |
 
-Please refer to the [Swagger API documentation](https://partner-api-stage.dk1.kiva.org/swagger-ui/) for specifics on each API. 
+Please refer to the [Swagger API documentation](https://partnerapi.production.kiva.org/swagger-ui/) for specifics on each API. 
 
 ### Response Data (test environment)
 On successful authentication, you should receive a response like the following:
@@ -50,7 +50,7 @@ On successful authentication, you should receive a response like the following:
 3    "token_type": "bearer",
 4    "expires_in": 43199,
 5    "scope": "create:loan_draft read:loans",
-6    "iss": "https://auth.stage.dk1.kiva.org/",
+6    "iss": "https://auth.stage.kiva.org/",
 7    "partnerId": "1",
 8    "jti": "RUsivUXGghhx-Yv9zza3ggZi6ao"
 9 }
@@ -74,6 +74,6 @@ Insert the unique bearer token you received.
 Once you have an account created by a Kiva admin you can login into the management [website](https://partners.kiva.org/pa3/partner/145/api).
 
 ```
-curl --location --request GET 'https://partner-api-stage.dk1.kiva.org/v3/partner/PARTNERID/loans' \
+curl --location --request GET 'https://partner-api-stage.kiva.org/v3/partner/PARTNERID/loans' \
 --header 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjFublhjRFRHIn0.eyJhdWQiOlsiaHR0cHM6Ly9wYXJ0bmVyLWFwaS5rMS5raXZhLm9yZyJdLCJzY29wZSI6WyJjcmVhdGU6bG9hbl9kcmFmdCIsInJlYWQ6bG9hbnMiXSwiaXNzIjoiaHR0cHM6Ly9hdXRoLmsxLmtpdmEub3JnLyIsInBhcnRuZXJJZCI6IjEiLCJleHAiOjE2MDIyMjA0MTYsImp0aSI6IlpldUt0WTZXQU5VU2lWai1EZTVtZE5nRnFGSSIsImNsaWVudF9pZCI6IlFEMmxPRzZMbTN2RWQ5QTZEdVh3eFJWOE1OMEp6cDVreSJ9.mdOHScBFzkKribTjFCfUG_BrzrDELFgznvp7OPwDvE_-dOZ-qbSR0IoItgw9Nzsgv13pY0MOM8euEzHThvaxi8gtr1WV0MY4TCE3ffgApaUo_-uC5cXu1NoMPjToE53kHthRmv4cWOu_ycFYMvPV606U24Jsgs1txNrobu_ZlUsaFpyPN-9Pr1wq8N0VQWOS9qt_lkKB0aJhbMHsNOHysTXTclkGh2jbXKj10H5LnXBQsh-UpLSKCw3UoMlepR4tjRxyXnSYLgZ80jTPSsOU1oKkAYdLRSbUHEM4g30FfZ8__kUI7LNtlmuVWYNV3ZVn0yxLO1wSu4n31TsIZUX_Ag
 ```

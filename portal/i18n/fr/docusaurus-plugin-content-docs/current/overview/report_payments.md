@@ -27,5 +27,5 @@ Pour vérifier si le format JSON que vous avez créé est correct, vous pouvez u
 
 ## Documentation technique
 * Toute la documentation technique de Kiva, y compris les points de terminaison, peut être trouvée ici :
-  * Environnement de test (Stage) :https://partner-api-stage.dk1.kiva.org/swagger-ui/
-  * Production (à utiliser après les tests)  https://partner-api.k1.kiva.org/swagger-ui/
+  * Environnement de test (Stage) :https://partner-api-stage.kiva.org/swagger-ui/
+  * Production (à utiliser après les tests)  https://partner-api.kiva.org/swagger-ui/

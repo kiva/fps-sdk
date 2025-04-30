@@ -11,7 +11,7 @@ const gethAuthToken = async () => {
     log(`\twith secret '${process.env.client_secret}'`);
 
     // URI to the staging system
-    const uri: string = 'https://auth-stage.dk1.kiva.org/oauth/token';
+    const uri: string = 'https://auth-stage.kiva.org/oauth/token';
 
     // details are documented in
     // https://kivapartnerhelpcenter.zendesk.com/hc/en-us/articles/360051231131-API-authentication-client-credential-flow-
@@ -19,7 +19,7 @@ const gethAuthToken = async () => {
     const details = {
         grant_type: 'client_credentials',
         scope: 'create:loan_draft read:loans',
-        audience: 'https://partner-api-stage.dk1.kiva.org',
+        audience: 'https://partner-api-stage.kiva.org',
         client_id: process.env.client_id,
         client_secret: process.env.client_secret,
     };

@@ -6,7 +6,7 @@ sidebar_position: 5
 
 
 ## Processus
-* Une requête d'information est envoyée à PA2 via l'API, [GET /v3/partner/{id}/loans](https://partner-api-stage.dk1.kiva.org/swagger-ui/#/partners/loansRouteUsingGET).
+* Une requête d'information est envoyée à PA2 via l'API, [GET /v3/partner/{id}/loans](https://partner-api-stage.kiva.org/swagger-ui/#/partners/loansRouteUsingGET).
 * Il existe 4 paramètres de demande de recherche que vous pouvez envoyer :: query, status, offset, and limit
   * Query: peut être n'importe quelle ligne que vous tapez dans la barre de recherche PA2 (par exemple, le nom, l'ID du prêt, l'ID du client ou l'ID Kiva).
   * Status:  peut être l'un des éléments suivants :
@@ -30,5 +30,5 @@ Pour vous assurer que tous les paiements sont rapportés lors de l'utilisation d
 
 ## Documentation technique
 * Toute la documentation technique de Kiva, y compris les points de terminaison, peut être trouvée ici :
-  * Environnement de test (stage) :https://partner-api-stage.dk1.kiva.org/swagger-ui/
-  * Production (à utiliser après les tests) : https://partner-api.k1.kiva.org/swagger-ui/
+  * Environnement de test (stage) :https://partner-api-stage.kiva.org/swagger-ui/
+  * Production (à utiliser après les tests) : https://partner-api.kiva.org/swagger-ui/

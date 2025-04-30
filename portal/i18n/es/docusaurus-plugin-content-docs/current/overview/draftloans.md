@@ -72,5 +72,5 @@ Cuando se rellenan en el Borrador del Préstamo, estos campos aparecerán en PA2
 
 ## Documentación técnica
 Toda la documentación técnica de Kiva, incluidos los puntos finales, puede encontrarse aquí:
-* Entorno de pruebas (Stage): https://partner-api-stage.dk1.kiva.org/swagger-ui/
-* Producción (para usar después de las pruebas):https://partner-api.k1.kiva.org/swagger-ui/
+* Entorno de pruebas (Stage): https://partner-api-stage.kiva.org/swagger-ui/
+* Producción (para usar después de las pruebas):https://partner-api.kiva.org/swagger-ui/

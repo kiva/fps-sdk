@@ -8,6 +8,10 @@ sidebar_position: 1
 
 This changelog lists all additions and updates to the Kiva Partner API, in chronological order.
 
+
+## April 30, 2025
+1. updated URLS to reflect changes in Kiva infrastructure
+
 ## Dec 16, 2024
 1. Added details on report payment rate limiting.  
 2. Added details on status fields for fetching loans. 

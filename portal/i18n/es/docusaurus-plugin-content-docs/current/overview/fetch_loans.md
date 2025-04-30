@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Proceso
 
-* Se envía una consulta de información a PA2 a través de la API, [GET /v3/partner/{id}/loans](https://partner-api-stage.dk1.kiva.org/swagger-ui/#/partners/loansRouteUsingGET).
+* Se envía una consulta de información a PA2 a través de la API, [GET /v3/partner/{id}/loans](https://partner-api-stage.kiva.org/swagger-ui/#/partners/loansRouteUsingGET).
 * Hay 4 parámetros de solicitud de búsqueda que puede enviar: query, status, offset y limit
   * Query: puede ser cualquier línea que se escriba en la barra de búsqueda de PA2 (por ejemplo, nombre, ID de préstamo, ID de cliente o ID de Kiva) 
   * Status: puede ser uno de los siguientes:
@@ -31,6 +31,6 @@ Para garantizar que todos los pagos se reporten al utilizar la opción "GET", in
 ## Documentación técnica
 
 * Toda la documentación técnica de Kiva, incluyendo los puntos finales, se puede encontrar aquí:
-  * Entorno de pruebas (Stage): https://partner-api-stage.dk1.kiva.org/swagger-ui/
-  * Producción (para usar después de las pruebas): https://partner-api.k1.kiva.org/swagger-ui/
-on (to use after testing): https://partner-api.k1.kiva.org/swagger-ui/
+  * Entorno de pruebas (Stage): https://partner-api-stage.kiva.org/swagger-ui/
+  * Producción (para usar después de las pruebas): https://partner-api.kiva.org/swagger-ui/
+on (to use after testing): https://partner-api.kiva.org/swagger-ui/
