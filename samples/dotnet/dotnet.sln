@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loan.draft", "loan.draft\lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "journal", "journal\journal.csproj", "{B89EC00B-2B23-45E2-AF9F-D78B65157BEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "get.loan.themes", "get.loan.themes\get.loan.themes.csproj", "{EBDFE6FE-E1CA-4BC7-B629-777C0CFFEDF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{B89EC00B-2B23-45E2-AF9F-D78B65157BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B89EC00B-2B23-45E2-AF9F-D78B65157BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B89EC00B-2B23-45E2-AF9F-D78B65157BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDFE6FE-E1CA-4BC7-B629-777C0CFFEDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDFE6FE-E1CA-4BC7-B629-777C0CFFEDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDFE6FE-E1CA-4BC7-B629-777C0CFFEDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDFE6FE-E1CA-4BC7-B629-777C0CFFEDF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

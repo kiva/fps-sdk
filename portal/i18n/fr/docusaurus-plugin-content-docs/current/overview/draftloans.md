@@ -26,6 +26,8 @@ Si un prêt individuel est comptabilisé, aucune des zones suivantes ne doit êt
 * `internal_loan_id`: il s'agit de l'ID de chaque prêt individuel (par exemple, un membre du groupe pourrait obtenir son troisième prêt auprès de l'organisation, et ce prêt pourrait avoir un ID unique). Entrez ce numéro d'identification ici)
 * `not_pictured`: utilisez ce champ dans le cas où un emprunteur est listé à la rubrique 1 : Description n'apparaît pas dans la photo
 
+Pour publier un prêt groupé, il est obligatoire d'inclure au moins un objet entreps (correspondant aux informations des entrepreneurs) dans le JSON.
+
 ## Paramètre : not_pictured
 
 Le champ not_pictured est une liste de valeurs vraies ou fausses correspondant à l'ordre des emprunteurs énumérés à l'étape 1 : [l'étape 1 : Description - Prêts de groupe](https://kivapartnerhelpcenter.zendesk.com/hc/en-us/articles/360031260191).

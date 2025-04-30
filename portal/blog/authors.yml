@@ -1,11 +1,5 @@
-nage:
-  name: Nathan George
-  title: Director of Engineering @ Kiva
-  url: https://github.com/yangshun
-  image_url: https://media-exp1.licdn.com/dms/image/C5603AQFcF5PTMv5X8Q/profile-displayphoto-shrink_100_100/0/1517682043359?e=1669248000&v=beta&t=OSVjI780hPD7oQ8bcuYV_5x4SWsPSZcKuk80ELndYX4
-
-mjohnson:
-  name: Margo Johnson
-  title: Director of Product @ Kiva
-  url: https://sebastienlorber.com
-  image_url: https://media-exp1.licdn.com/dms/image/C4E03AQEhcP7sGb9bKQ/profile-displayphoto-shrink_100_100/0/1567088866446?e=1669248000&v=beta&t=ngaEwevGzL6dDPal18oPGPT0r9fHzVTO_vNcqkhtxVU
+matt-raffel-kiva:
+  name: Matt Raffel
+  title: Princple Engineer
+  url: https://github.com/matt-raffel-kiva
+  image_url: https://github.com/account

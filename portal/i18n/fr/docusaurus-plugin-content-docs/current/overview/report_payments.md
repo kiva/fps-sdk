@@ -6,6 +6,10 @@ sidebar_position: 6
 Nous recommandons à votre équipe technique de consulter le coordinateur Kiva de votre organisation afin de bien comprendre le processus de rapport de remboursements. Pour ce faire, demandez à votre équipe technique d'examiner les points suivants :
 * [Cette vidéo](https://www.youtube.com/watch?v=pgg_rHBEQI8) explique en détail comment publier les rapports de remboursements.
 
+Étant donné que la performance du système est primordiale pour vous et tous nos partenaires, nous vous recommandons de diviser le nombre total de prêts dans votre rapport de remboursement en fichiers CSV contenant un maximum de 200 à 300 prêts. Étant donné que chaque fichier CSV est généré par un appel API distinct, chaque appel devrait inclure au maximum 200 à 300 prêts. En d'autres termes, le rapport doit être divisé en plusieurs appels, chacun envoyant un fichier JSON contenant 200 à 300 prêts.  
+
+Même si votre portefeuille actuel comporte moins de 200 ou 300 prêts, nous vous suggérons de configurer l'API afin de diviser automatiquement les futurs rapports en lots de 200 à 300 prêts. Ainsi, à mesure que votre portefeuille se développe, vous serez prêt à gérer des volumes importants sans problème.  
+
 ## Processus  
 1. Les informations sur les remboursements sont envoyées du SIG à PA2 en utilisant l'API.
 2. La personne en charge des rapports de remboursements entre dans le PA2 où elle révise et finalise le rapport.

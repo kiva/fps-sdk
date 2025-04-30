@@ -8,10 +8,16 @@ sidebar_position: 1
 
 This changelog lists all additions and updates to the Kiva Partner API, in chronological order.
 
-## November 7, 2023
+
+## April 30, 2025
 1. updated URLS to reflect changes in Kiva infrastructure
 
-## October 14, 2023
+## Dec 16, 2024
+1. Added details on report payment rate limiting.  
+2. Added details on status fields for fetching loans. 
+3. Added addiotnal information on posting group loan drafts.
+
+## October 14, 2021
 1. Additional documentation on scopes and 403 errors.
 2. Internally updated documentation ordering
 

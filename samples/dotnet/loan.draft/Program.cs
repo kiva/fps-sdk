@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 
@@ -215,9 +216,14 @@ async Task PostLoanDraft()
         loan.ImageEncoded = $"data:image/png;base64,{Convert.ToBase64String(imageContents)}";
     }
 
-
+    JsonSerializerOptions options = new JsonSerializerOptions
+    {  
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault
+    };
+    
     // convert to serialized data
-    string loanJson = JsonSerializer.Serialize(loan);
+    string loanJson = JsonSerializer.Serialize(loan, options);
+    
     var content = new StringContent(loanJson, Encoding.UTF8, "application/json");
     
     // post it

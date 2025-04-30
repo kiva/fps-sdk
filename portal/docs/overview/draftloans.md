@@ -32,6 +32,9 @@ If posting an individual loan, do not include any of the following fields. **The
 * `internal_loan_id`: this is the ID for each individual borrower's loan (for example, a member of the group might be taking out their third loan with the organization, and that loan might have a unique ID. Enter that ID here)
 * `not_pictured`: use this field in case any borrower is listed in Step 1: Description does not appear in the photo
 
+At least one `entreps` object must be included in the JSON document when posting a group loan.
+
+
 ### not_pictured field
 
 The `not_pictured` field is a list of true or false values that correspond to the order of the borrowers listed 

@@ -31,6 +31,8 @@ Si se publica un préstamo individual, no se debe incluir ninguno de los siguien
 * `internal_loan_id`: este es el ID de cada préstamo individual (por ejemplo, un miembro del grupo podría estar tomando su tercer préstamo con la organización, y ese préstamo podría tener un ID único. Introduzca ese ID aquí)
 * `not_pictured`: utilice este campo en caso de que algún prestatario figure en el Paso 1: La descripción no aparece en la foto
 
+Para publicar un préstamo grupal, es obligatorio incluir al menos un objeto `entreps` (correspondiente a la información de los emprendedores) en el JSON.
+
 ### Parámetro: not_pictured
 
 El campo not_pictured es una lista de valores verdadero o falso que corresponden al orden de los prestatarios listados en el Paso 1:  [Paso 1: Descripción - Préstamos grupales](https://kivapartnerhelpcenter.zendesk.com/hc/en-us/articles/360031260191).

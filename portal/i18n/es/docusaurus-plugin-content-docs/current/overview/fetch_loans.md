@@ -20,9 +20,12 @@ sidebar_position: 5
     * ended
     * reviewed
     * issue
-    * defaulted
-  * Offset & limit (“offset”, “limit”): funciona igual que cualquier paginación, offset es la distancia que hay que recorrer en la lista y limit es el número de resultados que hay que devolver. Así que para obtener las primeras 20 coincidencias sería offset=0, limit=20 y las siguientes 20 serían offset=20 limit=20, etc..  El valor por defecto es offset=0 y limit=20.
-    * No recomendamos solicitar más de 300, ya que el volumen de datos puede llegar a ser muy grande y limitar los recursos del servidor.
+    * defaulted  
+
+Para garantizar que todos los pagos se reporten al utilizar la opción "GET", incluya todos los préstamos con el estado "PayingBack" y los préstamos "defaulted". Los préstamos en estos estados pueden recibir pagos y deben ser reportados a Kiva.    
+
+**Offset & limit (“offset”, “limit”):** funciona igual que cualquier paginación, offset es la distancia que hay que recorrer en la lista y limit es el número de resultados que hay que devolver. Así que para obtener las primeras 20 coincidencias sería offset=0, limit=20 y las siguientes 20 serían offset=20 limit=20, etc..  El valor por defecto es offset=0 y limit=20.
+* No recomendamos solicitar más de 300, ya que el volumen de datos puede llegar a ser muy grande y limitar los recursos del servidor.
 * Después de realizar la solicitud, la respuesta de la API se devolverá en formato JSON
 
 ## Documentación técnica
