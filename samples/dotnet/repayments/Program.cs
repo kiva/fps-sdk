@@ -123,7 +123,7 @@ async Task DoRepayment()
     
     if (response.StatusCode == HttpStatusCode.OK) 
     {
-        Console.WriteLine($"\r\nGet Loans returned: \r\n {json}\r\n");
+        Console.WriteLine($"\r\nRepayments returned: \r\n {json}\r\n");
     } 
     else 
     {
