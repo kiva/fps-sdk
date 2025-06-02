@@ -31,6 +31,6 @@ Para garantizar que todos los pagos se reporten al utilizar la opción "GET", in
 ## Documentación técnica
 
 * Toda la documentación técnica de Kiva, incluyendo los puntos finales, se puede encontrar aquí:
-  * Entorno de pruebas (Stage): https://partner-api-stage.kiva.org/swagger-ui/
-  * Producción (para usar después de las pruebas): https://partner-api.kiva.org/swagger-ui/
-on (to use after testing): https://partner-api.kiva.org/swagger-ui/
+  * Entorno de pruebas (Stage): https://partnerapi.staging.kiva.org/swagger-ui
+  * Producción (para usar después de las pruebas): https://partnerapi.production.kiva.org/swagger-ui
+on (to use after testing): https://partnerapi.production.kiva.org/swagger-ui

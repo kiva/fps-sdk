@@ -30,5 +30,5 @@ Pour vous assurer que tous les paiements sont rapportés lors de l'utilisation d
 
 ## Documentation technique
 * Toute la documentation technique de Kiva, y compris les points de terminaison, peut être trouvée ici :
-  * Environnement de test (stage) :https://partner-api-stage.kiva.org/swagger-ui/
-  * Production (à utiliser après les tests) : https://partner-api.kiva.org/swagger-ui/
+  * Environnement de test (stage): https://partnerapi.staging.kiva.org/swagger-ui/
+  * Production (à utiliser après les tests) : https://partnerapi.production.kiva.org/swagger-ui

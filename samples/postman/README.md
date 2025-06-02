@@ -41,7 +41,7 @@ call.
 
 Our `Loan Draft [POST]` request includes a sample JSON structure, however, this is not a complete example. You can 
 learn more about the Loan Draft structure on the 
-[Swagger UI page](https://partner-api.k1.kiva.org/swagger-ui/#/partners/loanDraftRouteUsingPOST).
+[Swagger UI page](https://partnerapi.production.kiva.org/swagger-ui/#/partners/loanDraftRouteUsingPOST).
 
 - Please supply dates in a YYYY-MM-DD format. 
 

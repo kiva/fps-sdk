@@ -32,5 +32,5 @@ After making the request, the response from the API will be returned in JSON for
 
 ## Technical documentation
 All of Kiva's technical documentation, including endpoints, can be found here:
-Test environment (Stage): https://partner-api-stage.kiva.org/swagger-ui/
-Production (to use after testing): https://partner-api.kiva.org/swagger-ui/
+Test environment (Stage): https://partnerapi.staging.kiva.org/swagger-ui/
+Production (to use after testing): https://partnerapi.production.kiva.org/swagger-ui

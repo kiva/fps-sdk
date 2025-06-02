@@ -13,7 +13,7 @@ encoded in `UTF-8`. It's important to get this right, as some characters (like t
 transfer properly unless the encoding is correct.
 
 **When sending text values to the Partner API, please ensure that it is UTF-8 encoded.** This primarily impacts the
-[loan_draft](https://partner-api.k1.kiva.org/swagger-ui/#/partners/loanDraftRouteUsingPOST) operation, which accepts
+[loan_draft](https://partnerapi.production.kiva.org/swagger-ui/#/partners/loanDraftRouteUsingPOST) operation, which accepts
 a `location` field that often has Latin characters.
 
 ### Using the helper functions
