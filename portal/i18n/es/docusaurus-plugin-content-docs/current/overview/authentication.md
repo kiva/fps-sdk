@@ -11,7 +11,7 @@ Se puede acceder a la nueva API de socios mediante un Oauth2 JWT obtenido del se
 ### Solicitud de muestra (entorno de prueba)
 
 ```json
-1 curl --location --request POST 'https://auth-stage.kiva.org/oauth/token' \
+1 curl --location --request POST 'https://auth.staging.kiva.org/oauth/token' \
 2 --header 'Accept: application/json' \
 3 --header 'Content-Type: application/x-www-form-urlencoded' \
 4 --data-urlencode 'grant_type=client_credentials' \

@@ -18,10 +18,29 @@ string BearerToken = "";
 string AuthDomain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
 string PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no protocol, no path
 
+// for the loans endpoint, the status is required. See docs for valid values
+string loanStaus = "payingBack"; 
+int offset = 0;
+int limit = 100; 
+
+// Valid loan status values
+string[] validLoanStatuses = new string[] {
+    "deleted", "issue", "payingBack", "issue_revising", "issue_approving",
+    "reviewed", "fundRaising", "refunded", "raised", "ended", "defaulted",
+    "expired", "inactive_expired"
+};
 
 // ---------------------------------------------------------------------------
 //   functions
 
+void ShowHelpAndExit()
+{
+    Console.WriteLine("\r\nUsage: dotnet run [--loanStatus <status>] [--limit <number>]");
+    Console.WriteLine("  --loanStatus: Optional. Valid values: " + string.Join(", ", validLoanStatuses));
+    Console.WriteLine("  --limit: Optional. Integer between 0 and 3000.");
+	Console.WriteLine("\r\n");
+    Environment.Exit(1);
+}
 
 // ---------------------------------------------------------------------------
 // Please see the auth sample for discussion of how the authorization is expected to work
@@ -47,9 +66,7 @@ async Task GetAuthorizationToken()
     if (response.StatusCode == HttpStatusCode.OK)
     {
         using Stream responseBody = await response.Content.ReadAsStreamAsync();
-        var kivaAuthorization = await JsonSerializer.DeserializeAsync<KivaAuthorization>(responseBody);
-        
-        // TODO: parse out auth token and partner id
+        var kivaAuthorization = await JsonSerializer.DeserializeAsync<KivaAuthorization>(responseBody);        
         PartnerId = kivaAuthorization.PartnerId;
         BearerToken = kivaAuthorization.AuthToken;
 
@@ -72,7 +89,9 @@ async Task GetLoans()
         new MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", BearerToken);
 
-    var response = await client.GetAsync($"https://{PartnerDomain}/v3/partner/{PartnerId}/loans");
+	// note:  filter parameters, see https://partnerapi.staging.kiva.org/swagger-ui/index.html#/partners/loansRoute
+	Console.WriteLine($"Getting loans for partner {PartnerId} with status {loanStaus}, offset {offset}, limit {limit}");
+    var response = await client.GetAsync($"https://{PartnerDomain}/v3/partner/{PartnerId}/loans?status={loanStaus}&offset={offset}&limit={limit}");
     
     var json = await response.Content.ReadAsStringAsync();
     
@@ -90,6 +109,37 @@ async Task GetLoans()
 // ---------------------------------------------------------------------------
 // Program execution
 // ---------------------------------------------------------------------------
+
+// Parse command line arguments
+for (int i = 0; i < args.Length; i++)
+{
+    if (args[i] == "--loanStatus" && i + 1 < args.Length)
+    {
+        string statusArg = args[i + 1];
+        if (Array.IndexOf(validLoanStatuses, statusArg) == -1)
+        {
+            Console.WriteLine($"Invalid loanStatus: {statusArg}");
+            ShowHelpAndExit();
+        }
+        loanStaus = statusArg;
+        i++;
+    }
+    else if (args[i] == "--limit" && i + 1 < args.Length)
+    {
+        if (!int.TryParse(args[i + 1], out int parsedLimit) || parsedLimit < 0 || parsedLimit > 3000)
+        {
+            Console.WriteLine($"Invalid limit: {args[i + 1]}");
+            ShowHelpAndExit();
+        }
+        limit = parsedLimit;
+        i++;
+    }
+    else
+    {
+        Console.WriteLine($"Unknown or incomplete argument: {args[i]}");
+        ShowHelpAndExit();
+    }
+}
 
 Console.WriteLine("Kiva Partner API for listing loans");
 Console.WriteLine("    -- Step 1 Getting authorization token");

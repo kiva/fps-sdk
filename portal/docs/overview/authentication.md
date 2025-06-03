@@ -10,7 +10,7 @@ The new Partner API is accessible using an Oauth2 JWT obtained from Kiva’s aut
 ### Sample Request (test environment)
 
 ```json
-1 curl --location --request POST 'https://auth-stage.kiva.org/oauth/token' \
+1 curl --location --request POST 'https://auth.staging.kiva.org/oauth/token' \
 2 --header 'Accept: application/json' \
 3 --header 'Content-Type: application/x-www-form-urlencoded' \
 4 --data-urlencode 'grant_type=client_credentials' \

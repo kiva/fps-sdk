@@ -13,7 +13,7 @@ using node `18.12.1` and npm `8.19.2`.
 
 ## Getting an authorization token example
 This example shows how to retrieve an auth token with the credentials provided.  This example 
-demostrates using `https://auth-stage.kiva.org/oauth/token` api.  
+demostrates using `https://auth.staging.kiva.org/oauth/token` api.  
    
 1. run `npm run auth`  
 [Code](./src/demo/auth.ts)
