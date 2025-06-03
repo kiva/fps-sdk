@@ -11,7 +11,7 @@ const gethAuthToken = async () => {
     log(`\twith secret '${process.env.client_secret}'`);
 
     // URI to the staging system
-    const uri: string = 'https://auth-stage.kiva.org/oauth/token';
+    const uri: string = 'https://auth.staging.kiva.org/oauth/token';
 
     // details are documented in
     // https://kivapartnerhelpcenter.zendesk.com/hc/en-us/articles/360051231131-API-authentication-client-credential-flow-

@@ -5,8 +5,8 @@ using System.Text.Json;
 string PartnerId = "";
 string BearerToken = "";
 string dataFileName = "data.json";
-string AuthDomain = "auth-stage.dk1.kiva.org"; 
-string PartnerDomain = "partner-api-stage.dk1.kiva.org";
+string AuthDomain = "auth.staging.kiva.org";                    // URI only, no protocol, no path   
+string PartnerDomain = "partnerapi.staging.kiva.org";           // same as above, no protocol, no path
 ThemeList themes = null;                                        // loaded by GetThemes()
 
 // ---------------------------------------------------------------------------

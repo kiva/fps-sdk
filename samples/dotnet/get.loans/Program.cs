@@ -15,8 +15,8 @@ using System.Threading.Tasks;
 
 string PartnerId = "";
 string BearerToken = "";
-string AuthDomain = "auth-stage.kiva.org"; 
-string PartnerDomain = "partner-api-stage.kiva.org";
+string AuthDomain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
+string PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no protocol, no path
 
 
 // ---------------------------------------------------------------------------

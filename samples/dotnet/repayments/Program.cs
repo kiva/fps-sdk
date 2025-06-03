@@ -16,8 +16,8 @@ using System.Threading.Tasks;
 string PartnerId = "";
 string BearerToken = "";
 string dataFileName = "data.json";
-string AuthDomain = "auth-stage.kiva.org"; 
-string PartnerDomain = "partner-api-stage.kiva.org";
+string AuthDomain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
+string PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no protocol, no path
 
 
 // ---------------------------------------------------------------------------
@@ -91,8 +91,9 @@ StringContent GetJsonData()
 StringContent GetDataFromClass()
 {
     RepaymentHeader loan = new();
-    loan.Repayments.Add(new Repayment { LoanId = "loan_id_1", Amount = 480.00M, ClientId = "client_id_1" });
-    
+    loan.Repayments.Add(new Repayment { LoanId = "loan_id", Amount = 1.00M, ClientId = "client_id" });
+
+    Console.WriteLine($"\r\nRepayment object created with {loan.Repayments.Count} repayments.\r\n");
     string json = JsonSerializer.Serialize(loan);
     
     Console.WriteLine($"Loan object serizlied to json: {json}");

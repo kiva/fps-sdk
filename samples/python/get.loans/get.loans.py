@@ -10,8 +10,9 @@ import sys
 limit = 20
 PartnerId = ""
 BearerToken = ""
-AuthDomain = "auth-stage.dk1.kiva.org"
-PartnerDomain = "partner-api-stage.dk1.kiva.org"
+AuthDomain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
+PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no protocol, no path
+
 
 # ---------------------------------------------------------------------------
 # Functions
