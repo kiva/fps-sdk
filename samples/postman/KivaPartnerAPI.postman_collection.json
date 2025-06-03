@@ -273,7 +273,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://auth-stage.kiva.org/oauth/token",
+					"raw": "https://auth.staging.kiva.org/oauth/token",
 					"protocol": "https",
 					"host": [
 						"auth-stage",

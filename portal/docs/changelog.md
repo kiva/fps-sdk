@@ -8,6 +8,8 @@ sidebar_position: 1
 
 This changelog lists all additions and updates to the Kiva Partner API, in chronological order.
 
+## June 1, 2025
+1. Additional corrections to samples and documentation for endpoint information.
 
 ## April 30, 2025
 1. updated URLS to reflect changes in Kiva infrastructure

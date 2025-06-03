@@ -11,7 +11,7 @@ Il est possible d'accéder à la nouvelle API des partenaires via un Oauth2 JWT 
 ### Demande d'échantillon (environnement de test)
 
 ```json
-1 curl --location --request POST 'https://auth-stage.kiva.org/oauth/token' \
+1 curl --location --request POST 'https://auth.staging.kiva.org/oauth/token' \
 2 --header 'Accept: application/json' \
 3 --header 'Content-Type: application/x-www-form-urlencoded' \
 4 --data-urlencode 'grant_type=client_credentials' \
