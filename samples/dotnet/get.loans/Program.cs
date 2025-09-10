@@ -16,7 +16,9 @@ using System.Threading.Tasks;
 string PartnerId = "";
 string BearerToken = "";
 string AuthDomain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
+// string AuthDomain = "auth.k1.kiva.org";                     // for production, use this instead
 string PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no protocol, no path
+// string PartnerDomain = "partner-api.k1.kiva.org"; 
 
 // for the loans endpoint, the status is required. See docs for valid values
 string loanStaus = "payingBack"; 
@@ -59,6 +61,11 @@ async Task GetAuthorizationToken()
         { "scope", System.Environment.GetEnvironmentVariable("scope") }
     };
 
+    Console.WriteLine($"Using client_id: {parameters["client_id"]}");
+    Console.WriteLine($"Using audience: {parameters["audience"]}");
+    Console.WriteLine($"Using scope: {parameters["scope"]}");
+        
+    
     var encodedContent = new FormUrlEncodedContent(parameters);
 
     var response = await client.PostAsync($"https://{AuthDomain}/oauth/token", encodedContent);
