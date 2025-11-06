@@ -22,4 +22,5 @@ such as getting an auth token and using the auth token to make other API calls.
 [Typescript](./typescript/README.md) examples  
 [C#](./dotnet/README.md) examples  
 [PHP](./php/README.md) examples  
+[Python](./python/README.md) examples
 
