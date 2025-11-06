@@ -1,5 +1,5 @@
 # Financial Partner Services SDK
-This repo contains tools and code for using PA2 API.  Please note that this is not the API itself, but a set of tools to help you use the API.
+This repo contains tools and code for using [PA2 API](https://fps-sdk-portal.web.app/).  Please note that this is not the API itself, but a set of tools to help you use the API.
 The tools here are constantly being updated and improved.  Please check back often for updates.
 
 ## Structure
