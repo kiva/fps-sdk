@@ -143,6 +143,7 @@ for (int i = 0; i < args.Length; i++)
     }
     else
     {
+        // with dotnet 10, this will fail with dotnet run because the first arg is file name (Program.cs)
         Console.WriteLine($"Unknown or incomplete argument: {args[i]}");
         ShowHelpAndExit();
     }
