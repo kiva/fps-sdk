@@ -18,12 +18,13 @@ Export the following variables:
 export PARTNER_ID=[a number]
 export CLIENT_ID="[a client id]"
 export CLIENT_SECRET="[client secret]"
+export SCOPE="[scope values]"
 export TOKEN=$(
   curl -s --location --request POST 'https://auth.staging.kiva.org/oauth/token' \
     -H 'Accept: application/json' \
     -H 'Content-Type: application/x-www-form-urlencoded' \
     --data-urlencode 'grant_type=client_credentials' \
-    --data-urlencode 'scope=create:journal_update create:loan_draft create:repayment read:loans' \
+    --data-urlencode "scope=$SCOPE" \
     --data-urlencode "client_id=$CLIENT_ID" \
     --data-urlencode "client_secret=$CLIENT_SECRET" \
     --data-urlencode 'audience=https://partner-api-stage.dk1.kiva.org' \
@@ -31,7 +32,9 @@ export TOKEN=$(
 )
 ``` 
 
-Replace PARTNER_ID, CLIENT_ID, and CLIENT_SECRET with your actual credentials.  These will be given to you when you register your application with Kiva.
+Replace PARTNER_ID, CLIENT_ID, CLIENT_SECRET, and SCOPE with your actual credentials.  These will be given to you when you register your application with Kiva.
+
+_Note_: Partner id can be pulled from the OAuth token response as well, but we chose to set it explicitly here for simplicity.
 
 ## Step 2
 If you defined the `$TOKEN` variable as shown above, you can skip this step.  Otherwise,
