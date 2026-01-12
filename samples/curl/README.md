@@ -32,7 +32,7 @@ export TOKEN=$(
 )
 ``` 
 
-Replace PARTNER_ID, CLIENT_ID, CLIENT_SECRET, and SCOPE with your actual credentials.  These will be given to you when you register your application with Kiva.
+Update the shell variables `PARTNER_ID`, `CLIENT_ID`, `CLIENT_SECRET`, and `SCOPE` with your actual credentials.  These will be given to you when you register your application with Kiva.
 
 _Note_: Partner id can be pulled from the OAuth token response as well, but we chose to set it explicitly here for simplicity.
 
