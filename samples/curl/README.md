@@ -59,7 +59,7 @@ It will return some data like this:
 
 Please note that the `access_token` value above is truncated for readability.  You will need to extract the full value from your actual response.
 
-Extract the access_token value from the response and set it as an environment variable named TOKEN.
+Extract the `access_token` value from the response and set it as an environment variable named `TOKEN`.
 You can use the following command to do this in a Unix-like shell:
 
 ```bash
