@@ -28,7 +28,7 @@ To ensure that all payments are reported when using the "GET" option, include al
 
 **Offset, limit**: works the same as any pagination, offset is how far into the list to go and limit is how many results to return. So to get the first 20 matches it would be offset=0, limit=20 and the next 20 would be offset=20 limit=20, etc.. The default is offset=0 and limit=20.
 We don’t recommend requesting more than 300, because the volume of data can become very large and constrain server resources
-After making the request, the response from the API will be returned in JSON format
+After making the request, the response from the API will be returned in JSON format.  _Please note_:  If you do not include `offset` and `limit`, the first 20 rows will be returned.
 
 ## Technical documentation
 All of Kiva's technical documentation, including endpoints, can be found here:
