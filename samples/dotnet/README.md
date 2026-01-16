@@ -51,6 +51,6 @@ Results returned:
 1. navigate to the `./samples/dotnet` directory
 2. to run the list loans example, run this command `dotnet run --project repayments/repayments.csproj`
 
-## Running the repayments API example
+## Running the journal API example
 1. navigate to the `./samples/dotnet` directory
 2. to run the list loans example, run this command `dotnet run --project journal/journal.csproj`
