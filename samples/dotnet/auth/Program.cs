@@ -11,10 +11,10 @@ using System.Text;
 // ---------------------------------------------------------------------------
 
 string domain = "auth.staging.kiva.org";                // URI only, no protocol, no path   
-string clientId = System.Environment.GetEnvironmentVariable("client_id");
-string clientSecret = System.Environment.GetEnvironmentVariable("client_secret");
-string audience = System.Environment.GetEnvironmentVariable("audience");
-string scope = System.Environment.GetEnvironmentVariable("scope");
+string clientId = System.Environment.GetEnvironmentVariable("CLIENT_ID");
+string clientSecret = System.Environment.GetEnvironmentVariable("CLIENT_SECRET");
+string audience = System.Environment.GetEnvironmentVariable("AUDIENCE");
+string scope = System.Environment.GetEnvironmentVariable("SCOPE");
 
 Console.WriteLine($"getting autho token using client_id '{clientId}'");
 Console.WriteLine($"\tsecret: '{clientSecret}'");

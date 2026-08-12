@@ -29,6 +29,8 @@ string PartnerDomain = "partnerapi.staging.kiva.org";       // same as above, no
 // Please see the auth sample project for discussion how authorization works
 async Task GetAuthorizationToken()
 {
+    Console.WriteLine($"using client id {System.Environment.GetEnvironmentVariable("CLIENT_ID")}");
+    Console.WriteLine($"Audience: {System.Environment.GetEnvironmentVariable("AUDIENCE")} and SCOPE: {System.Environment.GetEnvironmentVariable("SCOPE")}");
     using HttpClient client = new();
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(
@@ -36,11 +38,11 @@ async Task GetAuthorizationToken()
 
     var parameters = new Dictionary<string, string> 
     {
-        { "client_id", System.Environment.GetEnvironmentVariable("client_id") },
-        { "client_secret", System.Environment.GetEnvironmentVariable("client_secret") },
-        { "audience", System.Environment.GetEnvironmentVariable("audience") },
+        { "client_id", System.Environment.GetEnvironmentVariable("CLIENT_ID") },
+        { "client_secret", System.Environment.GetEnvironmentVariable("CLIENT_SECRET") },
+        { "audience", System.Environment.GetEnvironmentVariable("AUDIENCE") },
         { "grant_type", "client_credentials" },
-        { "scope", System.Environment.GetEnvironmentVariable("scope") }
+        { "scope", System.Environment.GetEnvironmentVariable("SCOPE") }
     };
 
     var encodedContent = new FormUrlEncodedContent(parameters);
@@ -105,9 +107,9 @@ StringContent GetDataFromClass()
 // ---------------------------------------------------------------------------
 async Task DoRepayment()
 {
-    // var content = GetJsonData();
+    var content = GetJsonData();
     // uncomment the line below (and comment out the above line) to use the data classes instead of json data file
-    var content = GetDataFromClass();
+    // var content = GetDataFromClass();
     using HttpClient client = new();
     client.DefaultRequestVersion = new Version(2, 0);
     client.DefaultRequestHeaders.Accept.Clear();

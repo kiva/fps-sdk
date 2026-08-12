@@ -1,0 +1,6 @@
+{
+    "repayments": [
+        {"loan_id": "1042970", "amount": 25.00, "client_id": "184729"},
+        {"loan_id": "1043223", "amount": 40.00, "client_id": "481395"}
+    ]
+}

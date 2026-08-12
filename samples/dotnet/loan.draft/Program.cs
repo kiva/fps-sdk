@@ -37,11 +37,11 @@ async Task GetAuthorizationToken()
 
     var parameters = new Dictionary<string, string> 
     {
-        { "client_id", System.Environment.GetEnvironmentVariable("client_id") },
-        { "client_secret", System.Environment.GetEnvironmentVariable("client_secret") },
-        { "audience", System.Environment.GetEnvironmentVariable("audience") },
+        { "client_id", System.Environment.GetEnvironmentVariable("CLIENT_ID") },
+        { "client_secret", System.Environment.GetEnvironmentVariable("CLIENT_SECRET") },
+        { "audience", System.Environment.GetEnvironmentVariable("AUDIENCE") },
         { "grant_type", "client_credentials" },
-        { "scope", System.Environment.GetEnvironmentVariable("scope") }
+        { "scope", System.Environment.GetEnvironmentVariable("SCOPE") }
     };
 
     var encodedContent = new FormUrlEncodedContent(parameters);
