@@ -22,5 +22,5 @@ Recomendamos que su equipo técnico consulte al coordinador Kiva en su organizac
 
 ## Documentación técnica
 Toda la documentación técnica de Kiva, incluidos los puntos finales, puede encontrarse aquí:
- * Entorno de prueba (Stage): https://partnerapi.staging.kiva.org/swagger-ui/index.html
- * Producción (Para usar después de las pruebas): https://partnerapi.production.kiva.org/swagger-ui/index.html
+ * Entorno de prueba (Stage): https://partnerapi.staging.kiva.org/swagger-ui/
+ * Producción (Para usar después de las pruebas): https://partnerapi.production.kiva.org/swagger-ui
