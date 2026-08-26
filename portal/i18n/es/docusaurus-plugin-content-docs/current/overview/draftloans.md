@@ -50,11 +50,11 @@ Puede encontrar ejemplos de llamadas a estos puntos finales en nuestra [colecci�
 
 #### Desde PA2 - Paso 1: Descripción
 * **1**: `location` - Debe completarse con una ubicación definida actualmente en el sistema de Kiva. Las ubicaciones se gestionan en la sección Cuenta -> Ubicaciones en PA2.
-    * [GET Partner Locations](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/locationConfigsRouteUsingGET)
+    * [GET Partner Locations](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/locationConfigsRouteUsingGET)
 * **2**: `activity_id` - Debe completarse con el descriptor de la Actividad del Préstamo.
-    * [GET Loan Activities](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/activityConfigsRouteUsingGET)
+    * [GET Loan Activities](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/activityConfigsRouteUsingGET)
 * **3**: `description_language_id` - Debe completarse con el descriptor de la Actividad del Préstamo. 
-    * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/localeConfigsRouteUsingGET)
+    * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/localeConfigsRouteUsingGET)
 
 Al introducirse en el Borrador del Préstamo, estos campos aparecerán en PA2 de esta manera
 ![loandraft_step1.png](@site/static/img/pa2/loandraft_step1.png)
@@ -63,14 +63,14 @@ Al introducirse en el Borrador del Préstamo, estos campos aparecerán en PA2 de
 
 #### De PA2 - Paso 2: Condiciones del Préstamo
 * **4**: `theme_type_id` - Debe rellenarse con el identificador de la Campaña de Préstamo. Se trata de una clasificación del préstamo más amplia que la Actividad de Préstamo que es relevante para los términos y condiciones acordados por el socio.
-    * [GET Loan Themes](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/themeConfigsRouteUsingGET)
+    * [GET Loan Themes](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/themeConfigsRouteUsingGET)
 * **5**: `currency` - El código ISO de la divisa correspondiente al importe que solicita el prestatario.
-    * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/localeConfigsRouteUsingGET)
+    * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/localeConfigsRouteUsingGET)
 
 Cuando se rellenan en el Borrador del Préstamo, estos campos aparecerán en PA2 de la siguiente manera:
 ![loandraft_step2.png](@site/static/img/pa2/loandraft_step2.png)
 
 ## Documentación técnica
 Toda la documentación técnica de Kiva, incluidos los puntos finales, puede encontrarse aquí:
-* Entorno de pruebas (Stage): https://partnerapi.staging.kiva.org/swagger-ui/
-* Producción (para usar después de las pruebas):https://partnerapi.production.kiva.org/swagger-ui
+* Entorno de pruebas (Stage): https://partnerapi.staging.kiva.org/swagger-ui/index.html
+* Producción (para usar después de las pruebas):https://partnerapi.production.kiva.org/swagger-ui/index.html
