@@ -28,5 +28,5 @@ The content of the journal can be whatever you'd like it to be.
 
 ## Technical documentation
 All of Kiva's technical documentation, including endpoints, can be found here:
-* Test environment (Stage): https://partnerapi.staging.kiva.org/swagger-ui/index.html
-* Production (to use after testing): https://partnerapi.production.kiva.org/swagger-ui/index.html
+* Test environment (Stage): https://partnerapi.staging.kiva.org/swagger-ui/
+* Production (to use after testing): https://partnerapi.production.kiva.org/swagger-ui
