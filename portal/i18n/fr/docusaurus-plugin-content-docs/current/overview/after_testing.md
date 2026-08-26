@@ -67,4 +67,4 @@ curl --location --request GET 'https://partner-api.k1.kiva.org/v3/partner/PARTNE
 ```
 
 
-Pour passer du stade à production, il suffit de cliquer sur le lien suivant. Voici l'URL de la documentation technique pour production : https://partner-api.k1.kiva.org/swagger-ui/
+Pour passer du stade à production, il suffit de cliquer sur le lien suivant. Voici l'URL de la documentation technique pour production : https://partner-api.k1.kiva.org/swagger-ui/index.html
