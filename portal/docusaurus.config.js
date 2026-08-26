@@ -66,7 +66,7 @@ const config = {
             position: 'left',
             label: 'Introduction',
           },
-          {href: 'https://partner-api.k1.kiva.org/swagger-ui/index.html', label: 'API Reference', position: 'left'},
+          {href: 'https://partner-api.k1.kiva.org/swagger-ui', label: 'API Reference', position: 'left'},
           {
             href: 'https://github.com/Kiva/fsp-sdk',
             label: 'SDKs',
