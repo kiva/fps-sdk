@@ -39,7 +39,7 @@ Le " Scope " (champ d'application) identifie les APIs auxquelles il est possible
 | create:journal_update                                                 | https://partner-api.kiva.org/v3/partner/{id}/journals        |    
 | create:repayment                                                  | https://partner-api.kiva.org/v3/partner/{id}/repayments |
 
-Consultez [la documentation de l'API dans Swagger](https://partner-api-stage.kiva.org/swagger-ui/) pour obtenir des informations spécifiques sur chaque API.
+Consultez [la documentation de l'API dans Swagger](https://partner-api-stage.kiva.org/swagger-ui/index.html) pour obtenir des informations spécifiques sur chaque API.
 
 ### Response Data (environnement de test)
 Si l'authentification est correcte, vous devriez recevoir une réponse comme la suivante :

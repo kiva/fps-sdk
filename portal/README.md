@@ -53,6 +53,28 @@ request!*
 You can find the steps for setting up a project with the emulator
 on [Google's documentation for testing a site locally](https://firebase.google.com/docs/hosting/test-preview-deploy).
 
+### Publishing Changes (CI/CD)
+
+The live site (https://fps-sdk-portal.web.app) is **not** published by running `firebase deploy` locally. It is
+deployed automatically by GitHub Actions:
+
+* [`firebase-hosting-pull-request.yml`](../.github/workflows/firebase-hosting-pull-request.yml) builds a preview
+  deploy for every pull request.
+* [`firebase-hosting-merge.yml`](../.github/workflows/firebase-hosting-merge.yml) builds and deploys to the `live`
+  channel whenever a commit lands on `main`.
+
+**All changes, including docs-only edits, must go through a branch and pull request.** `main` is protected and
+requires an approving review before merge. Pushing directly to `main` bypasses that protection and has been
+observed to *not* reliably trigger the merge-deploy workflow, so the change silently never goes live even though
+it's sitting on `main`. Always:
+
+1. Create a branch and open a PR against `main`.
+2. Confirm the PR's preview-deploy check succeeds, and review the preview URL it produces.
+3. Get it approved and merge — merging is what triggers the live deploy.
+
+The manual `firebase deploy` steps below are for local testing (via the emulator) or as an emergency stopgap if the
+GitHub Actions pipeline itself is broken — not the normal way to publish a change.
+
 ### Deploying to Firebase
 
 The Firebase project is located at https://console.firebase.google.com/project/fps-sdk-portal/hosting/sites. If you
