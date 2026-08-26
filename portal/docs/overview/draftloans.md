@@ -57,11 +57,11 @@ You can find example calls to these endpoints in our [Postman collection](https:
 
 #### From PA2 - Step 1: Description
 * **1**: `location` - This must be populated with a location that is currently defined in Kiva's system. Locations are managed in the Account -> Locations section in PA2.
-  * [GET Partner Locations](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/locationConfigsRouteUsingGET)
+  * [GET Partner Locations](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/locationConfigsRouteUsingGET)
 * **2**: `activity_id` - This must be populated with the identifier of the Loan Activity.
-  * [GET Loan Activities](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/activityConfigsRouteUsingGET)
+  * [GET Loan Activities](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/activityConfigsRouteUsingGET)
 * **3**: `description_language_id` - The ID of the language that the loan description is written in.
-  * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/localeConfigsRouteUsingGET)
+  * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/localeConfigsRouteUsingGET)
 
 When populated on the Loan Draft, these fields will show up in PA2 as follows:
 ![loandraft_step1.png](@site/static/img/pa2/loandraft_step1.png)
@@ -70,9 +70,9 @@ When populated on the Loan Draft, these fields will show up in PA2 as follows:
 
 #### From PA2 - Step 2: Loan Terms
 * **4**: `theme_type_id` - This must be populated with the identifier of the Loan Theme. This is a broader classification of the loan than the Loan Activity that is relevant to the terms and conditions agreed upon by the partner.
-  * [GET Loan Themes](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/themeConfigsRouteUsingGET)
+  * [GET Loan Themes](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/themeConfigsRouteUsingGET)
 * **5**: `currency` - The ISO currency code for the currency corresponding to the amount the borrower is requesting.
-  * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/#/partner-configurations/localeConfigsRouteUsingGET)
+  * [GET Locales](https://partner-api.k1.kiva.org/swagger-ui/index.html#/partner-configurations/localeConfigsRouteUsingGET)
 
 When populated on the Loan Draft, these fields will show up in PA2 as follows:
 ![loandraft_step2.png](@site/static/img/pa2/loandraft_step2.png)
@@ -82,5 +82,5 @@ To check if the JSON document you created is correct, you can use an online JSON
 
 ## Technical documentation
 All of Kiva's technical documentation, including endpoints, can be found here:
-* Test environment (Stage): https://partnerapi.staging.kiva.org/swagger-ui/
-* Production (to use after testing): https://partnerapi.production.kiva.org/swagger-ui
+* Test environment (Stage): https://partnerapi.staging.kiva.org/swagger-ui/index.html
+* Production (to use after testing): https://partnerapi.production.kiva.org/swagger-ui/index.html
